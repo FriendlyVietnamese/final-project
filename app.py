@@ -167,7 +167,7 @@ def order(name):
         user.update(push__trasua_id = new_trasua)
         import time
         time.sleep(5)
-        return redirect(url_for('menu'))
+        return redirect(url_for('index'))
 
 @app.route('/profile')
 def profile():
