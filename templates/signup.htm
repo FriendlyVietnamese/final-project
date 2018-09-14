@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<htm lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,10 +7,12 @@
     <title>Sign up</title>
     {% include "meta-data.htm" %}
 </head>
-<body id="signup-bg">
+<body>
+    {% include 'homepage/navigation.htm' %}
+    <div id="signup-bg" style="margin-top:80px">
     <div class="d-flex justify-content-center">
     <div class="btn1 bg-light pointer1" style="width:590px; margin-top:70px">
-        <h1  class="font-montserrat">Sign up!</h1>
+        <h1  class="font-montserrat">Đăng ký ngay!</h1>
         <h2 class="font-montserrat text-secondary">Khuyến mãi tặng 1 cốc size M</h2>
         <h2 class="font-montserrat text-secondary">Cho đơn hàng đầu tiên <i class="fas fa-heart"></i></h2>
         <form action="" method="POST">
@@ -39,9 +41,9 @@
             <input type="submit" class="btn btn-outline-secondary btn-lg" style="margin-top:25px" value="Chiến thôi!">
         </form>
     </div>
-    <div class="">
-
     </div>
-    
-</body>
-</html>
+    <div class="mt-5">
+    {% include "/homepage/footer.htm" %}        
+</div>
+    </body>
+</htm>
