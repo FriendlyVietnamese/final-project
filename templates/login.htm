@@ -1,44 +1,45 @@
 <!DOCTYPE html>
-<html lang="en">
+<htm lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Đăng nhập</title>
     {% include 'meta-data.htm' %}
 </head>
 <body id="login-bg">
     <div class="d-flex justify-content-center">
-        <div class="mt-5 btn1 bg-light pointer1" style="width:530px" >    
+        <div class="mt-5 btn1 bg-light pointer1" style="width:530px;height:400px" >    
+            <H4 class="my-4">ĐĂNG NHẬP</H4>
+            <div class="mt-4">    
                 <form action="" method="POST">
                         <div class="d-flex">
                                 <div class="col-md-3 d-flex flex-column my-2 text-left">
-                                    <label for="">Tên đăng nhập</label>
+                                    <label for=""><i class="fas fa-user mr-1"></i>Tên đăng nhập</label>
                                     <br>
-                                    <label for="">Mật khẩu</label>
+                                    <label for=""><i class="fas fa-unlock-alt mr-1"></i>Mật khẩu</label>
                                 </div>
-                                <div class="col-md-8 d-flex flex-column my-2">
+                                <div class="col-md-8 d-flex flex-column my-2 ml-4">
                                         <input type="text" name = "user" size="20px" placeholder="Username...">
                                         <br>
                                         <input type="password" name = "password" size="30px" placeholder="Password...">
-                                <p class="error text-danger text-left mt-1">{{ error }}</p>
-                                <div class="d-flex flex-column mt-3">
+                                    <p class="error text-danger text-left mt-1">{{ error }}</p>
+                                    <div class="d-flex flex-column mt-3">
                                         <input style="" type="submit" value="Log in" class="btn btn-outline-secondary " >
-                                        <a href="/signup" class="mt-3"><b>Chưa có tài khoản? Đăng ký ngay</b></a>    
-                
-                                    </div>
+                                        <a href="/signup" class="mt-4"><b>Chưa có tài khoản? Đăng ký ngay</b></a>    
+                                </div>
                                 </div>
                     
                     
-                    </form>
-                </div>
-                
+                </form>
             </div>
-                   
+        </div>    
         </div>
+                   
+    </div>
 
 <br>
-<div class="my-5"></div>
+<div class="d-block h-200px"></div>
 {% include "/homepage/footer.htm" %}
 </body>
-</html>
+</htm>
