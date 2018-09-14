@@ -1,31 +1,39 @@
 <!DOCTYPE html>
-<html>
+<htm>
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Page Title</title>
+    <title>Profile</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    {% include 'meta-data.htm' %}
     <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
     <script src="main.js"></script>
 </head>
 <body>
-    {{user.fullname}} <br>
-    {{user.email}} <br>
-    {{user.phone}} <br>
-    {{user.address}} <br>
-    <hr>
-    {% for trasua in tra_sua %}
-        {{trasua.name}}
-        {{trasua.sugar}}
-        {{trasua.ice}}
-        {{trasua.size}}
-        {{trasua.topping}}
-        <br>
-        <br>
-    {% endfor %}
+    {% include 'homepage/navigation.htm' %}
+    <div class="d-flex justify-content-around" style="margin-top:80px">
+        <div>
+            <h1>Your Profile</h1>
+            <b>Tên khách hàng: </b>{{user.surname}} {{user.fullname}} <br>
+            <b>Email: </b>{{user.email}} <br>
+            <b>Số điện thoại: </b>{{user.phone}} <br>
+            <b>Địa chỉ giao hàng: </b>{{user.address}} <br>
+        </div>
+        <div>
+            {% for trasua in tra_sua %}
+                <img src="{{ trasua.img }}" alt=""> <br>
+                <b>Loại: </b> {{trasua.name}} <br>
+                <b>Mức đường: </b> {{trasua.sugar}} <br>
+                <b>Mức đá: </b> {{trasua.ice}} <br>
+                <b>Cỡ: </b> {{trasua.size}} <br>
+                <b>Topping: </b> {{trasua.topping}} <br>
+                <hr>
+            {% endfor %}
+        </div>
+    </div>
 
 
 
 
 </body>
-</html>
+</htm>
