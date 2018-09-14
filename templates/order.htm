@@ -1,0 +1,182 @@
+<!DOCTYPE htm>
+<htm>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Order page</title>
+    {% include 'meta-data.htm' %}
+</head>
+<body>
+    
+    {% include 'homepage/navigation.htm' %}
+    <div class="my-5">
+        <br>
+
+    
+    <!-- order sugar and ice -->
+    <form method= 'post'>
+    <div class="d-flex" style="height:230px;"> 
+        <div class=" bg-color text-white col-md-4 d-flex flex-column justify-content-center ">
+        <div class="font-quicksand "> <h4>Bước 1</h4></div>
+        <div class="font-quicksand"> <h2>Mức đường và đá</h2></div>
+        <div class="font-quicksand"> Chọn thật kỹ để có một cốc trà hoàn hảo nhé!</div>
+        </div>
+        <div class="ml-5  " style="width:100%">
+            <div >
+                <div class="d-flex mt-3 ">
+                <div class="font-quicksand mr-3"> <h3> Mức đá </h3></div>
+                <img  src="http://pluspng.com/img-png/ice-png-black-and-white-noun-project-200.png" width="10%" height="18%">
+            </div>
+                <div class=" bg-color d-flex mt-3 justify-content-around font-quicksand " style="height: 12px; border-radius: 15px ;width:100%; " >
+                    <div class="d-flex flex-column ">
+                    <input type="radio" name="radiogroup" id="radio-1" value ="0%">
+                    <label for="radio-1">0%</label>
+                    </div>
+                    <div class="d-flex flex-column align-items-center">
+                            <input type="radio" name="radiogroup" id="radio-2" value ="25%">
+                            <label for="radio-2">25%</label>
+                    </div>
+                    <div class="d-flex flex-column align-items-center">
+                            <input type="radio" name="radiogroup" id="radio-3" value ="50%" >
+                            <label for="radio-3">50%</label>
+                     </div>
+                     <div class="d-flex flex-column align-items-center">
+                            <input type="radio" name="radiogroup" id="radio-4" value ="75%">
+                            <label for="radio-4">75%</label>
+                    </div>
+                    <div class="d-flex flex-column align-items-center">
+                            <input type="radio" name="radiogroup" id="radio-5" value ="100%">
+                            <label for="radio-5">100%</label>
+                     </div>
+                </div>
+            </div>
+
+            <div>
+                    <div >
+                            <div class="d-flex mt-5 ">
+                            <div class="font-quicksand mr-3"> <h3> Mức đường </h3></div>
+                            <img  src="https://static.thenounproject.com/png/155433-200.png" width="10%" height="18%    ">
+                            </div>
+                    </div>
+                    <div class="bg-color d-flex mt-3 justify-content-around font-quicksand " style="height: 12px; border-radius: 15px ;width:100%;" >
+                        <div class="d-flex flex-column ">
+                        <input type="radio" name="radiogroup1" id="radio-6" value="0%">
+                        <label for="radio-6">0%</label>
+                        </div>
+                        <div class="d-flex flex-column align-items-center">
+                                <input type="radio" name="radiogroup1" id="radio-7" value ="25%">
+                                <label for="radio-7">25%</label>
+                        </div>
+                        <div class="d-flex flex-column align-items-center">
+                                <input type="radio" name="radiogroup1" id="radio-8" value ="50%">
+                                <label for="radio-8">50%</label>
+                         </div>
+                         <div class="d-flex flex-column align-items-center">
+                                <input type="radio" name="radiogroup1" id="radio-9" value ="75%">
+                                <label for="radio-9">75%</label>
+                        </div>
+                        <div class="d-flex flex-column align-items-center">
+                                <input type="radio" name="radiogroup1" id="radio-10" value ="100%">
+                                <label for="radio-10">100%</label>
+                         </div>
+                    </div>
+                </div>
+        </div>
+    </div>
+
+
+        <!-- Chọn topping -->
+
+        <div class="d-flex mt-5 " style=" height:400px;"> 
+                <div class="d-flex flex-column" style="width:100%">
+
+                <div class="d-flex justify-content-around flex-wrap " style="width:100%; height:50%">
+                    <input type="checkbox" name="topping" id="tranchau"  value="Trân châu"/>
+                    <label for="tranchau"><div class="  bg-color d-flex justify-content-center align-items-center  flex-column" style=" width:200px; height:200px;" >
+                        <div class="font-quicksand text-white text-center mb-2 "> <h6> Trân châu </h6></div>
+                        <img src="http://www.realfruitbubbletea.com/images/menu/tapioca-pearl_01.png" width="50%">
+                             </div>
+                    </label>
+
+                <input type="checkbox" name="topping" id="kemsua" value="Kem Sữa"/>
+                <label for="kemsua"><div class="  bg-color d-flex justify-content-center align-items-center  flex-column" style=" width:200px; height:200px;" >
+                    <div class="font-quicksand text-white text-center mb-2"> <h6> Kem Sữa</h6></div>
+                        <img src="../static/image/milkfoam-01.png" width="60%">
+                         </div>
+                </label>
+
+                <input type="checkbox" name="topping" id="dua" value ="Dừa"/>
+                <label for="dua"><div class="  bg-color d-flex justify-content-center align-items-center  flex-column" style=" width:200px; height:200px;" >
+                    <div class="font-quicksand text-white text-center mb-2"> <h6> Dừa </h6></div>
+                        <img src="../static/image/coconut-01.png" width="60%">
+                         </div>
+                </label>
+            </div>
+                <div class=" d-flex justify-content-around mt-4" style="width:100%; height:50%">
+
+                    <input type="checkbox" name="topping" id="lohoi" value="Lô hội"/>
+                    <label for="lohoi"><div class="  bg-color d-flex justify-content-center align-items-center  flex-column" style=" width:200px; height:200px;" >
+                        <div class="font-quicksand text-white text-center "> <h6> Lô hội </h6></div>
+                        <img src="../static/image/aloe-01.png" width="70%">
+                             </div>
+                    </label>
+
+                <input type="checkbox" name="topping" id="tranchautrang" value="Trân châu trắng"/>
+                <label for="tranchautrang"><div class="  bg-color d-flex justify-content-center align-items-center  flex-column" style=" width:200px; height:200px;" >
+                        <div class="font-quicksand text-white text-center "> <h6> Trân châu trắng </h6></div>
+                        <img src="../static/image/whitepearl.png" width="70%">
+                         </div>
+                </label>
+
+                <input type="checkbox" name="topping" id="pudding" value="Pudding" />
+                <label for="pudding"><div class="  bg-color d-flex justify-content-center align-items-center  flex-column" style=" width:200px; height:200px;" >
+                    <div class="font-quicksand text-white text-center mb-2"> <h6> Pudding </h6></div>
+                    <img src="../static/image/pudding-01.png" width="70%">
+                </div>
+                </label>
+                
+                </div>
+                </div>
+                <div class=" col-md-4 d-flex flex-column justify-content-center ">
+                        <div class=" font-quicksand text-right mr-2"> <h2>Bước 2</h2></div>
+                        <div class="font-quicksand text-right mr-2"> <h1>Chọn topping</h1></div>
+
+                </div>
+            </div>
+                <!-- size ly -->
+    <div class="d-flex mt-5  " style="height:230px;"> 
+            <div class=" bg-color text-white col-md-4 d-flex flex-column justify-content-center ">
+            <div class="font-quicksand "> <h4>Bước 3</h4></div>
+            <div class="font-quicksand"> <h2>Chọn size ly</h2></div>
+            </div>
+            <div class="ml-5 d-flex  " style="width:100%">
+                <div>
+                <input type="checkbox" name="size" id="small" value="Size bé" />
+                <label for="small"><div class=" d-flex justify-content-center align-items-center flex-column" style=" width:200px; height:200px;" >
+                    <img src="../static/image/smallsize-01.png" width="70%">
+                    <div class="font-quicksand text-center mb-2 "> <h6> Size bé </h6></div>
+
+                </div>
+                </label>
+            </div>
+            <div>
+                <input type="checkbox" name="size" id="big" value="Size to" />
+                <label for="big"><div class=" d-flex justify-content-center align-items-center  flex-column" style=" max-width:200px; max-height:200px;" >
+                    <img src="../static/image/smallsize-01.png" width="80%">
+                    <div class="font-quicksand text-center mb-2 "> <h6> Size to </h6></div>
+
+                </div>
+                </label>
+            </div>
+            </div>
+            </div>
+        </div>
+        <input class="mt-5 btn-primary d-flex" type="submit" value="Đặt hàng tiếp">
+
+    </form>
+    <br>
+    <br>
+    <br>
+    {% include 'homepage/footer.htm' %}
+</body>
+</htm>

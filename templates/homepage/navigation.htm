@@ -1,0 +1,34 @@
+
+    <div data-aos="fade-down" class="d-flex flex-row justify-content-center align-items-center w-100 navbar "  style="background: rgba(0, 0, 0, 0.2); height:60px;">
+            <div class="d-flex flex-row justify-content-around align-items-center w-35 ">                    
+                <a class="font-montserrat" style="color:white; text-decoration:none;" href="/"> HOME </a>                    
+                <a class="font-montserrat" style="color:white; text-decoration:none;" href="/about">ABOUT US</a>
+                <a class="font-montserrat" style="color:white; text-decoration:none;  ;" href="">LOCATION</a>            
+                <a class="font-montserrat" style="color:white; text-decoration:none;" href="/menu">MENU</a>            
+                
+            </div>
+            
+            <div class="w-25 text-center">
+                <a href="../">            
+                <img src="../static/image/logonotrans-01.png" width="85px" height="80px"> 
+            </a>             
+            </div> 
+        
+            <div class="d-flex flex-row justify-content-around align-items-center w-35" style="">
+                          
+                <!-- <a class="font-montserrat" style="color:white; text-decoration:none;  ;" href="">LOCATION</a>             -->
+                <!-- <a class="font-montserrat" style="color:white; text-decoration:none;" href="">MERCH</a>             -->
+                <a class="font-montserrat" style="color:white; text-decoration:none;" href="/contact">CONTACT</a>
+                {% if 'user_id' not in session %}
+                    <a class="font-montserrat text-footer" style="color:white; text-decoration:none;" href="{{ url_for('login') }}">LOGIN</a>
+                    <a class="font-montserrat" style="color:white; text-decoration:none;" href="{{ url_for('signup') }}">REGISTER</a>
+                {% else %}
+                    <a class="font-montserrat" style="color:white; text-decoration:none;" href="{{ url_for('profile') }}">PROFILE</a>
+                    <a class="font-montserrat" style="color:white; text-decoration:none;" href="{{ url_for('logout') }}">LOGOUT</a>
+                    <a class="font-montserrat" style="color:white; text-decoration:none;" href="">Hello,&nbsp;{{session['username']}}</a>
+
+                {% endif %}
+        
+            </div>
+        </div>
+

@@ -1,0 +1,349 @@
+/* màu chính  */
+.main-color{
+   color:#292929;
+}
+
+.font-quicksand{
+    font-family: 'Quicksand', sans-serif;
+}
+.bg-color{
+    background-color:#292929;
+ }
+
+
+.h-500px {   
+    height: 500px;
+}
+
+.h-700px {
+    height: 680px;
+}
+
+.h-300px {
+    height: 300px;
+}
+
+.h-240px {
+    height: 240px;
+}
+.font-amatic{
+    font-family: 'Amatic SC', cursive;
+
+}
+.color-matcha{
+    color: black;
+}
+.bg-smoke{
+    background-color: whitesmoke;
+}
+.font-montserrat {
+    font-family: 'Montserrat', sans-serif;
+}
+.font-lobster{
+    font-family: 'Lobster', cursive;
+}
+.font-volk{
+    font-family: 'Vollkorn', serif;
+
+}
+.bg-fixed {
+    background-attachment: fixed;
+}
+
+.h-200px {
+    height: 200px;
+}
+.bg-lightpink{
+    background-color: black;
+}
+.text-green{
+    color: black;
+}
+.font-cabin{
+    font-family: 'Cabin', sans-serif;
+}
+.navbar {
+    overflow: hidden;
+    position: fixed;
+    background-color: white;
+    top: 0;
+    width: 100%;
+    z-index:1;
+  }
+.hover01 figure img {
+	-webkit-transform: scale(1);
+	transform: scale(1);
+	-webkit-transition: .4s ease-in-out;
+	transition: .4s ease-in-out;
+}
+.hover01 figure:hover img {
+	-webkit-transform: scale(1.1);
+	transform: scale(1.1);
+}
+a {
+    -webkit-transform: scale(1);
+	transform: scale(1);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+a:hover{
+    -webkit-transform: scale(1.05);
+	transform: scale(1.05);
+}
+
+.bg-matcha{
+    background-color: grey;
+}
+
+#footer{
+    height: 400px;
+    width: 100%;
+    background-color: #292929;
+}
+.color-dark{
+    color: rgb(56, 51, 31);
+}
+
+a{
+    color: rgb(56, 51, 31);
+    
+}
+
+}
+.h-100px {
+    height: 100px;
+}
+.container1 {
+    position: relative;
+    width:250px;
+    height:250px;
+    border-radius: 50%;  
+}
+  
+.image {
+    display: block;
+    width: 100%;
+    height: auto;
+    width:250px;
+    height:250px;
+    border-radius: 50%;  
+}
+  
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #484b44;
+    border-radius: 50%;  
+}
+
+.text {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+.checkboxgroup{
+    display:inline-block;
+    text-align:center;
+}
+.checkboxgroup label {
+    display:block;
+}
+input[type=radio] {
+    -webkit-transform: scale(1); /* Chrome, Safari, Opera */
+    transform: scale(1);
+}
+.container1:hover .overlay {
+    opacity: 1;
+}
+
+
+.form-control:valid {
+    background: #F5F5F5!important;
+    border-radius:0px/50%;
+    border-color: #F5F5F5!important;
+}
+
+input { 
+    font-family: 'Quicksand', sans-serif;
+
+}
+.form-control::-webkit-input-placeholder { 
+    color: gray; 
+} 
+select{
+    background: #F5F5F5!important;
+    color: gray!important;
+    font-family: 'Quicksand', sans-serif;
+    border-radius:0px/50% !important;
+    border-color: #F5F5F5!important;
+}
+
+.btn-primary,.btn-primary:visited {
+    background-color:black!important;
+    border-color: white !important;
+    color: gray!important;
+    font-family: 'Quicksand', sans-serif!important;
+    border-radius:0px/50%;
+}
+.btn-primary:hover, .btn-primary:active{
+    background-color: black !important;
+    color: white!important;
+    border-radius:0px/50%;
+}
+
+
+.fadeout {
+    position: relative;
+    -webkit-animation: mymove 3s;  
+    -webkit-animation-fill-mode: forwards;
+    animation: mymove 3s;
+    animation-fill-mode: forwards;
+    color: black;
+}
+
+
+@keyframes mymove {
+    from {top: 0px; }
+    to {top: 200px; background-color: transparent; }
+}
+
+.fadein {
+	opacity: 0;
+	animation-name: fadeInOpacity;
+	animation-iteration-count: 1;
+    animation-duration: 2s;
+    animation-delay: 3s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fadeInOpacity {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+
+#slide1 {
+    background-image: url("../image/boba10.jpeg");
+    background-size: cover;
+    height: 800px;
+    width: 100%;
+}
+
+#slide2 {
+    background-image: url("../image/boba2.jpg");
+    background-size: cover;
+    height: 800px;
+    width: 100%;    
+}
+
+.sz-lrg {
+    size: 100px;
+}
+
+.w-80 {
+    width: 80%;
+}
+
+.w-35 {
+    width: 35%;
+}
+
+.picture {
+    border: solid white 10px;
+}
+
+
+.container1:hover .overlay {
+    opacity: 1;
+}
+
+.my-300 {
+    margin-top: 350px;
+    margin-bottom: 350px;
+}
+
+.customerinfo-bg{
+    background-image: url('https://phillipjjones.files.wordpress.com/2012/06/street-bag-idea-3.jpg');
+    background-size:100% 100%;
+}
+.native-hidden {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+mysubmitradio:checked {
+    content: url('http://placekitten.com/210/220');
+}
+.border-box{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+
+.text-footer {
+    color:rgb(167, 160, 160);
+}
+
+.text-footer:hover {
+    color: rgb(238, 226, 226);
+}
+
+.btn-primary:hover {
+    color: #fff;
+    background-color: #00b3db;
+    border-color: #285e8e;  
+}
+
+.pointer:hover {
+    cursor: pointer;
+}
+.pointer1:hover {
+    cursor: auto;
+}
+#login-bg{
+    width: 100%;
+    height: 800px;
+    background-color: rgb(230, 230, 230);
+    background-image: url(../image/bg2.jpg);
+    background-size: cover
+}
+#signup-bg{
+    width: 100%;
+    height: 800px;
+    background-color: rgb(230, 230, 230);
+    background-image: url(../image/boba11.jfif);
+    background-size: cover
+}
+.btn1{
+    height: 590px;
+    display: inline-block;
+    font-weight: 400;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -webkit-user-select: none;
+    border: 1px solid transparent;
+    padding: .8375rem .75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: 20px;
+    transition: color .15s;
+}

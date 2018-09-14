@@ -1,0 +1,60 @@
+<!DOCTYPE htm>
+<htm>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>About</title>
+    {% include 'meta-data.htm' %}
+</head>
+<body >
+    {% include 'homepage/navigation.htm' %}
+    <div class="d-block py-4"></div>
+    <div class=" d-flex mt-3" >
+      <div class="col-md-6 customerinfo-bg">
+     </div>
+        <div >
+    <div class="font-quicksand m-5  "> <h2> Thông tin giao hàng</h2></div>
+
+    <div class="d-flex justify-content-around mt-4" >
+    <div class="form-group col-md-3 ">
+            <input type="text" class="form-control" placeholder="Tên..."  > 
+    </div>
+    <div class="form-group col-md-3 ">
+            <input type="text" class="form-control" placeholder="Sđt..."  > 
+    </div>
+
+<div class="form-group col-md-3 mb-3">
+  <select class="custom-select" id="inputGroupSelect01" >
+    <option selected >Thời gian</option>
+    <option value="1">1 tiếng nữa</option>
+    <option value="2">2 tiếng nữa</option>
+    <option value="3">3 tiếng nữa</option>
+  </select>
+</div>
+
+</div>
+
+<div class="d-flex justify-content-center mt-3 ">
+<div class="form-group col-md-11 ">
+        <input type="text" class="form-control" placeholder="Địa chỉ"  > 
+</div>
+</div>
+
+<div class="d-flex justify-content-center mt-3 ">
+        <div class="form-group col-md-11 ">
+                <input type="text" class="form-control" placeholder="Ghi chú"  > 
+        </div>
+</div>
+
+<div class="d-flex justify-content-center mt-3 ">
+ <a href="/finishpage" role="button" class="btn btn-primary btn-lg"> Đặt hàng ngay! </a>
+</div>
+</div>
+</div>
+<div class="d-block py-4"></div>
+{% include 'homepage/footer.htm' %}
+
+   
+
+</body>
+</htm>

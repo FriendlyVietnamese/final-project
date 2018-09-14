@@ -1,0 +1,68 @@
+<!DOCTYPE htm>
+<htm lang="en">
+<head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Available Products</title>
+    {% include "meta-data.htm" %}
+</head>
+<body >
+    <!-- header -->
+    {% include 'homepage/navigation.htm' %}
+    <br>
+    <div class="d-block py-5"></div>
+    <h3 class=" bg-smoke text-center color-matcha font-montserrat ">The 1999s Special Drinks </h3>
+    <div class="my-4 d-block">
+        <div class="d-flex justify-content-around hover01" data-aos="fade-up">
+        {% for special in special_drinks %}
+            <form method="POST">
+
+                <figure>
+                    <button class="pointer" type="submit" style="border: 0px; background-color:white;"> <input style="display:none" type="text" value="{{special.name}}" name="tra"> 
+                        <a><img width="360px" height="360" src="{{special.link}}" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="">
+                        <figcaption class="font-montserrat text-center ">{{special.name}} </figcaption></a>
+                    </button>
+                </figure>
+            </form>
+        {% endfor%}
+        </div>
+    </div><br>
+    <h3 class=" text-center bg-smoke  font-montserrat my-5">The 1999s Trà Sữa </h3>
+    <div class="d-block">
+        <div class="d-flex justify-content-around hover01" data-aos="fade-up">
+            {% for trasua in trasuas %}
+                <form method="POST">
+                    <figure>
+                        <button class="pointer" type="submit" style="border: 0px; background-color:white;"> <input style="display:none" type="text" value="{{trasua.name}}" name="tra"> 
+                            <a><img width="360px" height="360" src="{{trasua.link}}" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="">
+                            <figcaption class="font-montserrat text-center ">{{trasua.name}} </figcaption></a>
+                        </button>
+                    </figure>
+                </form>
+            {% endfor %}
+        </div>
+    </div><br>
+    <h3 class=" text-center color-matcha bg-smoke font-montserrat my-5">The 1999s Tea </h3>
+    <div class="d-block">
+        <div class="d-flex justify-content-around hover01" data-aos="fade-up">
+                {% for tea in teas %}
+                <form method="POST">
+                    <figure>
+                        <button class="pointer" type="submit" style="border: 0px; background-color:white;"> <input style="display:none" type="text" value="{{tea.name}}" name="tra"> 
+                            <a><img width="360px" height="360" src="{{tea.link}}" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="">
+                            <figcaption class="font-montserrat text-center ">{{tea.name}} </figcaption></a>
+                        </button>
+                    </figure>
+                </form>
+            {% endfor %}         
+        </div><br>
+        <div class="d-block w-100" style="height: 50px;"></div>
+        {% include 'homepage/footer.htm' %}
+    </div>
+
+
+
+
+
+</body>
+</htm>

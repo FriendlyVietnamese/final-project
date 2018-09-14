@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    {% include 'meta-data.htm' %}
+</head>
+<body id="login-bg">
+    <div class="d-flex justify-content-center">
+        <div class="mt-5 btn1 bg-light pointer1" style="width:530px" >    
+                <form action="" method="POST">
+                        <div class="d-flex">
+                                <div class="col-md-3 d-flex flex-column my-2 text-left">
+                                    <label for="">Tên đăng nhập</label>
+                                    <label for="">Mật khẩu</label>
+                                </div>
+                                <div class="col-md-8 d-flex flex-column my-2">
+                                        <input type="text" name = "user" size="20px">
+                                        <input type="text" name = "password" size="30px">
+                                </div>
+                    
+                    <div class="d-block ">
+                        <input style="display:-webkit-flex;" type="submit" value="Log in" class="btn btn-outline-secondary btn-lg mt-4 " >
+                    </div>
+                    </form>
+                    <a href="/signup" class="my-5"><b>Chưa có tài khoản? Đăng ký ngay</b></a>    
+                </div>
+                
+            </div>
+                   
+        </div>
+
+<br>
+<div class="my-5"></div>
+{% include "/homepage/footer.htm" %}
+</body>
+</html>
