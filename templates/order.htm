@@ -151,7 +151,7 @@
             </div>
             <div class="ml-5 d-flex  " style="width:100%">
                 <div>
-                <input type="checkbox" name="size" id="small" value="Size bé" />
+                <input type="radio" name="size" id="small" value="Size bé" />
                 <label for="small"><div class=" d-flex justify-content-center align-items-center flex-column" style=" width:200px; height:200px;" >
                     <img src="../static/image/smallsize-01.png" width="70%">
                     <div class="font-quicksand text-center mb-2 "> <h6> Size bé </h6></div>
@@ -160,7 +160,7 @@
                 </label>
             </div>
             <div>
-                <input type="checkbox" name="size" id="big" value="Size to" />
+                <input type="radio" name="size" id="big" value="Size to" />
                 <label for="big"><div class=" d-flex justify-content-center align-items-center  flex-column" style=" max-width:200px; max-height:200px;" >
                     <img src="../static/image/smallsize-01.png" width="80%">
                     <div class="font-quicksand text-center mb-2 "> <h6> Size to </h6></div>
@@ -171,7 +171,33 @@
             </div>
             </div>
         </div>
-        <input class="mt-5 btn-primary d-flex" type="submit" value="Đặt hàng tiếp">
+        <!-- <input class="mt-5 btn-primary d-flex" type="submit" value="Đặt hàng tiếp"> -->
+        <!-- Button trigger modal -->
+    <button type="submit" class="mt-5 btn-primary btn" data-toggle="modal" data-target="#exampleModal">
+       Đặt hàng ngay!
+      </button>
+      
+      <!-- Modal -->
+      <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Đặt hàng thành công</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              Cảm ơn bạn đã đặt hàng!
+            </div>
+            <div class="modal-footer">
+              {# <button type="button" class="btn btn-secondary" data-dismiss="modal"><a href="{{url_for('menu')}}">Đặt hàng tiếp</a></button> #}
+              <button type="button" class="btn btn-primary" data-dismiss="modal"><a href="{{url_for('menu')}}" style="text-decoration:none"><span class="text-light">Đặt hàng tiếp</span></a></button>
+              <button type="button" class="btn btn-primary"><a href="{{url_for('index')}}" style="text-decoration:none"><span class="text-light">Quay lại trang chủ</span></a></button>
+            </div>
+          </div>
+        </div>
+      </div>
 
     </form>
     <br>

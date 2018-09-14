@@ -14,18 +14,23 @@
                         <div class="d-flex">
                                 <div class="col-md-3 d-flex flex-column my-2 text-left">
                                     <label for="">Tên đăng nhập</label>
+                                    <br>
                                     <label for="">Mật khẩu</label>
                                 </div>
                                 <div class="col-md-8 d-flex flex-column my-2">
-                                        <input type="text" name = "user" size="20px">
-                                        <input type="text" name = "password" size="30px">
+                                        <input type="text" name = "user" size="20px" placeholder="Username...">
+                                        <br>
+                                        <input type="password" name = "password" size="30px" placeholder="Password...">
+                                <p class="error text-danger text-left mt-1">{{ error }}</p>
+                                <div class="d-flex flex-column mt-3">
+                                        <input style="" type="submit" value="Log in" class="btn btn-outline-secondary " >
+                                        <a href="/signup" class="mt-3"><b>Chưa có tài khoản? Đăng ký ngay</b></a>    
+                
+                                    </div>
                                 </div>
                     
-                    <div class="d-block ">
-                        <input style="display:-webkit-flex;" type="submit" value="Log in" class="btn btn-outline-secondary btn-lg mt-4 " >
-                    </div>
+                    
                     </form>
-                    <a href="/signup" class="my-5"><b>Chưa có tài khoản? Đăng ký ngay</b></a>    
                 </div>
                 
             </div>

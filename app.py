@@ -32,7 +32,8 @@ def login():
             # print(session['fullname'])
             return redirect (url_for('index'))
         else:
-            return "Sai tên đăng nhập hoặc mật khẩu"
+            error = "Sai tên đăng nhập hoặc mật khẩu"
+            return render_template("login.htm", error=error)
 @app.route("/logout")
 def logout():
     try:
@@ -164,7 +165,8 @@ def order(name):
         user_id = session['user_id']
         user = User.objects.with_id(user_id)
         user.update(push__trasua_id = new_trasua)
-        
+        import time
+        time.sleep(60)
         return redirect(url_for('menu'))
 
 @app.route('/profile')
